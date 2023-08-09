@@ -1,6 +1,6 @@
-import styles from './page.module.css'
+"use client"
 import Link from 'next/link';
-
+import styles from './page.module.css';
 
 export default function Home() {
 
@@ -16,12 +16,18 @@ export default function Home() {
         <Link href={'./screenTree'}>
           <button className={styles.button}>Ir para Tela 3</button>
         </Link>
-        <Link href={'/'}>
-          <button className={styles.button}>Botão 3</button>
-        </Link>
-        <Link href={'/'}>
-          <button className={styles.button}>Botão 4</button>
-        </Link>
+        <button
+          className={styles.button}
+          onClick={() => alert('Botão 3 clicado')}
+        >
+          Botão 3
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => alert('Botão 4 clicado')}
+        >
+          Botão 4
+        </button>
       </div>
     </div>
   )

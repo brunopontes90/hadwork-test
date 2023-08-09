@@ -28,13 +28,23 @@
   border: none;
   color: white;
   cursor: pointer;
+  font-weight: bold;
   border-radius: 5px;
   padding: 10px 15px;
+  margin-left: 15px;
   background-color: #0077cc;
 }
 
 .button:hover {
   border: none;
   color: black;
+  font-weight: bold;
+  margin-left: 15px;
   background-color: #DF7401;
+}
+
+.divrequest{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
 }
