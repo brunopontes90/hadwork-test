@@ -9,10 +9,10 @@ export default function Home() {
     <div>
       <h1>Screen 3</h1>
       <Link href={'/'}>
-        <button>Ir para Tela 1</button>
+        <button>Retorne a Tela 1</button>
       </Link>
       <Link href={'./screenTwo'}>
-        <button>Ir para Tela 2</button>
+        <button>Retorne a  Tela 2</button>
       </Link>
     </div>
   )

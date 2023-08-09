@@ -1,25 +1,28 @@
-//import styles from './page.module.css'
+import styles from './page.module.css'
 import Link from 'next/link';
 
-//className={styles.main}
 
 export default function Home() {
 
   return (
-    <div>
-      <h1>Tela 1</h1>
-      <Link href={'./screenTwo'}>
-        <button>Ir para Tela 2</button>
-      </Link>
-      <Link href={'./screenTree'}>
-        <button>Ir para Tela 3</button>
-      </Link>
-      <Link href={'/'}>
-        <button>Botão 3</button>
-      </Link>
-      <Link href={'/'}>
-        <button>Bitão 4</button>
-      </Link>
+    <div className={styles.container}>
+      <div className={styles.divh1}>
+        <h1 className={styles.h1}>Tela 1</h1>
+      </div>
+      <div className={styles.divbutton}>
+        <Link href={'./screenTwo'}>
+          <button className={styles.button}>Ir para Tela 2</button>
+        </Link>
+        <Link href={'./screenTree'}>
+          <button className={styles.button}>Ir para Tela 3</button>
+        </Link>
+        <Link href={'/'}>
+          <button className={styles.button}>Botão 3</button>
+        </Link>
+        <Link href={'/'}>
+          <button className={styles.button}>Botão 4</button>
+        </Link>
+      </div>
     </div>
   )
 }
